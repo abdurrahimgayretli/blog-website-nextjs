@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Button from "@/components/Button/Button";
+
+export const metadata = {
+  title: "Contact Information",
+  description: "This is Contact Page",
+};
 
 const Contact = () => {
   return (
@@ -9,7 +15,7 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.imgContainer}>
           <Image
-            src={"/contact.png"}
+            src="/contact.png"
             alt=""
             fill={true}
             className={styles.image}
@@ -21,9 +27,10 @@ const Contact = () => {
           <textarea
             className={styles.textArea}
             placeholder="message"
-            cols={30}
-            rows={10}
-          />
+            cols="30"
+            rows="10"
+          ></textarea>
+          <Button url="#" text="Send" />
         </form>
       </div>
     </div>

@@ -7,7 +7,7 @@
 
 .logo {
   font-weight: bold;
-  font-size: 22pz;
+  font-size: 22px;
 }
 
 .links {
@@ -19,7 +19,7 @@
 .logout {
   padding: 5px;
   border: none;
-  background-color: aqua;
+  background-color: #53c28b;
   color: white;
   cursor: pointer;
   border-radius: 3px;
