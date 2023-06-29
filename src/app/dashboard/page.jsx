@@ -47,6 +47,7 @@ const Dashboard = () => {
         }),
       });
       mutate();
+      router.refresh();
       e.target.reset();
     } catch (err) {
       console.log(err);
@@ -59,6 +60,7 @@ const Dashboard = () => {
         method: "DELETE",
       });
       mutate();
+      router.refresh();
     } catch (err) {
       console.log(err);
     }
